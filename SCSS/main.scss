@@ -1,24 +1,14 @@
-
-    $primary-color:#fff;
-    $accent-color: green;
-    $text-color: rgb(255, 255, 255);
-
-    $font-weights: (
-        "regular": 400,
-        "medium": 500,
-        "strong": 800
-         );
-
+    @import'./resets'; 
+    @import'./variables';
 body {
     color: $text-color;
     background : $accent-color;
-    font-weight: map-get($font-weights, medium);
 }  
 .main{
     width:80%;
     margin:0 auto;
 #{&}__paragraph {
-   font-weight: map-get($font-weights, medium);
+   font-weight: map-get($font-weights, strong);
     text-align:justify;
  &:hover{
         color: rgb(0, 0, 0);
@@ -26,4 +16,4 @@ body {
       
 }
 
-}
+} 
